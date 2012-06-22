@@ -15,6 +15,8 @@ $pre=$_POST['pre'];
 $z=$_GET['z'];
 
 $db = connectdb();
+
+
 $query = "INSERT INTO zadanie(login, predmet, razdel,path,name) VALUES('$login','$pre','$z','$uploadfile','$name')";
 $res = mysql_query($query, $db);
 header("Location:pre.php?pre=$pre");
