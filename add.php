@@ -7,6 +7,8 @@ include_once('misc.php');
 
 $login = auth();
 $uploaddir = 'files/';
+
+
 $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
 $name=$_POST['name']; 
 move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile);
