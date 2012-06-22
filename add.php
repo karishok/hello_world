@@ -12,6 +12,8 @@ $name=$_POST['name'];
 move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile);
 
 $pre=$_POST['pre'];
+
+
 $z=$_GET['z'];
 
 $db = connectdb();
